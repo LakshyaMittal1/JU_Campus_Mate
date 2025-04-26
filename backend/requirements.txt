@@ -1,0 +1,8 @@
+# to save installed libraries
+fastapi
+uvicorn
+langchain
+sqlalchemy
+transformers
+
+# install these libraries on your system (in virtual environment to avoid and conflict or crash)

@@ -18,7 +18,7 @@ def get_all_locations():
 def get_location_by_name(location_name: str):
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
-    cursor.execute("SELECT * FROM locations WHERE location_name = %s", (location_name,))
+    cursor.execute("SELECT * FROM locations WHERE Room_Number = %s", (location_name,))
     result = cursor.fetchone()
     cursor.close()
     conn.close()

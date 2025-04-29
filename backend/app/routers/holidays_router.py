@@ -1,9 +1,9 @@
 # routers/holidays_router.py
 
 from fastapi import APIRouter, HTTPException, Query
-from database import get_connection
+from app.database import get_connection
 
-router = APIRouter(prefix="/holidays", tags=["Holidays"])
+router = APIRouter()
 
 @router.get("/")
 def get_all_holidays():

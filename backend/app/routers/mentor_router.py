@@ -1,7 +1,5 @@
-
-from database import get_connection
 from fastapi import APIRouter
-from database import get_connection
+from app.database import get_connection
 from fastapi import HTTPException
 
 router = APIRouter(prefix="/mentors", tags=["Class Mentors"])

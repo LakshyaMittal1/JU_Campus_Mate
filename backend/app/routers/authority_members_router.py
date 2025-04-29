@@ -1,6 +1,6 @@
 # app/routers/authority_members_router.py
 from fastapi import APIRouter
-from database import get_connection
+from app.database import get_connection
 
 router = APIRouter(prefix="/authority", tags=["Authority Members"])
 

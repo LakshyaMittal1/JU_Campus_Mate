@@ -18,7 +18,7 @@ def get_all_offices():
 def get_office_by_name(office_name: str):
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)
-    cursor.execute("SELECT * FROM offices WHERE office_name = %s", (office_name,))
+    cursor.execute("SELECT * FROM offices WHERE Name = %s", (office_name,))
     result = cursor.fetchone()
     cursor.close()
     conn.close()

@@ -6,7 +6,7 @@ def get_connection():
         connection = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="12016",
+            password="1234",
             database="chatbot_university"
         )
         return connection  # Return the connection if successful

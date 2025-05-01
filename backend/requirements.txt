@@ -4,5 +4,6 @@ uvicorn
 langchain
 sqlalchemy
 transformers
+python-dotenv
 
 # install these libraries on your system (in virtual environment to avoid and conflict or crash)

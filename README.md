@@ -26,7 +26,7 @@
 |-----------|--------------------------------------|
 | Frontend  | Flutter (Web + Mobile)               |
 | Backend   | Python + FastAPI                     |
-| NLP       | Groq API / Mistral via Ollama (LAN)  |
+| NLP       | Mistral via Ollama (LAN)             |
 | Database  | MySQL                                |
 
 ---

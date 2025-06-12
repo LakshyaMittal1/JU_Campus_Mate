@@ -1,3 +1,5 @@
+// homepage.dart
+
 import 'package:flutter/material.dart';
 import 'package:ju_campus_mate/welcome.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -66,8 +68,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   alignment: const Alignment(0.01, 0.57),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(8),
-                    child: Image.network(
-                      'https://png.pngtree.com/png-vector/20230225/ourmid/pngtree-smart-chatbot-cartoon-clipart-png-image_6620453.png',
+                    child: Image.asset('assets/images/chatbot.png',
                       width: 200,
                       height: 200,
                       fit: BoxFit.cover,

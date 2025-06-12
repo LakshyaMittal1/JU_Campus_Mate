@@ -1,3 +1,4 @@
+// welcome.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -42,25 +43,69 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
                 Align(
-                  alignment: const Alignment(0, -0.34),
-                  child: Text(
-                    '   ASK YOUR QUERIES \n     RELATED TO THE \n           UNIVERSITY \n\n   I  AM HAPPY TO BE \n     YOUR GUIDE!!',
-                    textAlign: TextAlign.left,
-                    style: GoogleFonts.montserrat(
-                      fontSize: 30,
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w500,
-                      color: const Color(0xFF960419),
-                      shadows: const [
-                        Shadow(
-                          color: Colors.black26,
-                          offset: Offset(1.0, 2.0),
-                          blurRadius: 1.0,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+  alignment: const Alignment(0, -0.3),
+  child: Column(
+    // mainAxisSize: MainAxisSize.min,
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
+    children: [
+      Text(
+        'ASK YOUR QUERIES',
+        textAlign: TextAlign.center,
+        style: GoogleFonts.montserrat(
+          fontSize: 26,
+          fontWeight: FontWeight.w600,
+          fontStyle: FontStyle.italic,
+          color: const Color(0xFF960419),
+          shadows: const [
+            Shadow(
+              color: Colors.black26,
+              offset: Offset(1.0, 2.0),
+              blurRadius: 1.0,
+            ),
+          ],
+        ),
+      ),
+      const SizedBox(height: 30),
+      Text(
+        'RELATED TO THE UNIVERSITY',
+        textAlign: TextAlign.center,
+        style: GoogleFonts.montserrat(
+          fontSize: 26,
+          fontWeight: FontWeight.w600,
+          fontStyle: FontStyle.italic,
+          color: const Color(0xFF960419),
+          shadows: const [
+            Shadow(
+              color: Colors.black26,
+              offset: Offset(1.0, 2.0),
+              blurRadius: 1.0,
+            ),
+          ],
+        ),
+      ),
+      const SizedBox(height: 24),
+      Text(
+        'I AM HAPPY TO BE YOUR GUIDE!!',
+        textAlign: TextAlign.center,
+        style: GoogleFonts.montserrat(
+          fontSize: 26,
+          fontWeight: FontWeight.w600,
+          fontStyle: FontStyle.italic,
+          color: const Color(0xFF960419),
+          shadows: const [
+            Shadow(
+              color: Colors.black26,
+              offset: Offset(1.0, 2.0),
+              blurRadius: 1.0,
+            ),
+          ],
+        ),
+      ),
+    ],
+  ),
+),
+
                 Align(
                   alignment: const Alignment(0, 0.46),
                   child: ElevatedButton(

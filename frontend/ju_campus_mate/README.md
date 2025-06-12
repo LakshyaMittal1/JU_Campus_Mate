@@ -1,16 +1,32 @@
-# ju_campus_mate
+# 🎓 JU Campus Mate – University Chatbot Assistant
 
-A new Flutter project.
+**JU Campus Mate** is an intelligent campus assistant built for **JECRC University** students. It simplifies access to university-related information through a smart chatbot interface powered by natural language understanding.
 
-## Getting Started
+![Flutter](https://img.shields.io/badge/Frontend-Flutter-blue)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-teal)
+![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
+![LLM](https://img.shields.io/badge/NLP-Groq/Mistral-purple)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🧠 **Chatbot UI** – Ask anything about JU: faculty contacts, locations, syllabus, holidays, and more.
+- 💬 **Chat History** – Persistent conversation with message bubbles and scrollable history.
+- ⏳ **Typing Animation** – WhatsApp-like 3-dot typing indicator while processing.
+- 🌗 **Light/Dark Mode** – Seamless theme toggle support.
+- 🧹 **Clear Chat** – Reset conversation easily.
+- ⚠️ **Smart UX** – Shake animation on empty sends, Send button disabled while waiting.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🧩 Tech Stack
+
+| Layer     | Tech                                 |
+|-----------|--------------------------------------|
+| Frontend  | Flutter (Web + Mobile)               |
+| Backend   | Python + FastAPI                     |
+| NLP       | Groq API / Mistral via Ollama (LAN)  |
+| Database  | MySQL                                |
+
+---

@@ -5,7 +5,7 @@
 ![Flutter](https://img.shields.io/badge/Frontend-Flutter-blue)
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-teal)
 ![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
-![LLM](https://img.shields.io/badge/NLP-Groq/Mistral-purple)
+![LLM](https://img.shields.io/badge/NLP-Mistral-purple)
 
 ---
 

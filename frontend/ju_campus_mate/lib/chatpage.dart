@@ -103,8 +103,8 @@ class _ChatPageState extends State<ChatPage> {
       final response = await http
           .post(
             Uri.parse(
-              'http://192.168.54.113:5000/askques',
-            ), // your laptop's IP address
+              'http://< PC's IP : 5000>/askques',
+            ), // your laptop's IP address with port (5000 here)
             headers: {'Content-type': 'application/json'},
             body: jsonEncode({'question': message}),
           )

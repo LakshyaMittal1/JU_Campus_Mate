@@ -35,7 +35,7 @@
 
 Thanks to these amazing people for making **JU Campus Mate** possible:
 
-- **Kinjal**
-- **Palak**
-- **Dimple**
-- **Lakshya**
+- **Kinjal Mehrotra**
+- **Palak Gupta**
+- **Dimple Gupta**
+- **Lakshya Mittal**

@@ -2,6 +2,7 @@
 
 import 'dart:async';
 import 'dart:convert';
+import 'auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:http/http.dart' as http;
@@ -103,7 +104,7 @@ class _ChatPageState extends State<ChatPage> {
       final response = await http
           .post(
             Uri.parse(
-              'http://< PC's IP : 5000>/askques',
+              'http://< PCs IP : 5000>/askques',
             ), // your laptop's IP address with port (5000 here)
             headers: {'Content-type': 'application/json'},
             body: jsonEncode({'question': message}),
@@ -415,7 +416,7 @@ class ChatInput extends StatelessWidget {
 }
 
 // Navigation drawer component
-class ChatDrawer extends StatelessWidget {
+/* class ChatDrawer extends StatelessWidget {
   const ChatDrawer({super.key});
 
   @override
@@ -440,6 +441,61 @@ class ChatDrawer extends StatelessWidget {
               context
                   .findAncestorStateOfType<_ChatPageState>()
                   ?.showClearChatConfirmation();
+            },
+          ),
+        ],
+      ),
+    );
+  }
+} */
+
+// Navigation drawer component
+class ChatDrawer extends StatelessWidget {
+  const ChatDrawer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          const DrawerHeader(
+            decoration: BoxDecoration(color: Colors.blue),
+            child: Text(
+              'Options',
+              style: TextStyle(color: Colors.white, fontSize: 24),
+            ),
+          ),
+
+          // CLEAR CHAT
+          ListTile(
+            leading: const Icon(Icons.delete_forever),
+            title: const Text('Clear Chat'),
+            onTap: () {
+              Navigator.pop(context); // Close drawer
+              context
+                  .findAncestorStateOfType<_ChatPageState>()
+                  ?.showClearChatConfirmation();
+            },
+          ),
+
+          const Divider(),
+
+          // LOGOUT BUTTON
+          ListTile(
+            leading: const Icon(Icons.logout, color: Colors.red),
+            title: const Text(
+              'Logout',
+              style: TextStyle(color: Colors.red),
+            ),
+            onTap: () {
+              // Clear login info
+              loggedInEmail = null;
+              loggedInName  = null;
+
+              // Navigate to login screen
+              // Navigator.pushReplacementNamed(context, '/login');
+              Navigator.pushReplacementNamed(context, '/');
             },
           ),
         ],

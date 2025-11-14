@@ -17,10 +17,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     super.initState();
     Future.delayed(const Duration(milliseconds: 15000), () {
       if (!mounted) return;
-      Navigator.push(
+      /* Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => const WelcomePage()),
-      );
+      ); */
+      Navigator.pushNamed(context, '/login');
     });
   }
 
@@ -33,10 +34,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         body: SafeArea(
           child: InkWell(
             onTap: () {
-              Navigator.push(
+              /* Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const WelcomePage()),
-              );
+              ); */
+              Navigator.pushNamed(context, '/login');
             },
             child: Stack(
               children: [

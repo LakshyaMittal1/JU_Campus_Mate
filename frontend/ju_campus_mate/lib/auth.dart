@@ -6,8 +6,18 @@ String? loggedInName;
 List<Map<String, String>> registeredUsers = [
   {
     "name": "Lakshya Mittal",
-    "email": "lakshya.22bcon168@jecrcu.edu.in",
-    "password": "lakshya_168"
+    "email": "lakshyamittal23503@gmail.com",
+    "password": "23503"
+  },
+  {
+    "name": "Palak Gupta",
+    "email": "palak7304.gupta@gmail.com",
+    "password": "7304"
+  },
+  {
+    "name": "Kinjal Mehrotra",
+    "email": "kinjalmehrotra123@gmail.com",
+    "password": "123"
   },
   {
     "name": "Admin",

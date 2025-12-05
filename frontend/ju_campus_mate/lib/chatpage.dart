@@ -100,16 +100,18 @@ class _ChatPageState extends State<ChatPage> {
     _scrollToBottom(); // Immediately show new message
 
     try {
-      // Api call with 30-second timeout
-      final response = await http
-          .post(
-            Uri.parse(
-              'http://< PCs IP : 5000>/askques',
-            ), // your laptop's IP address with port (5000 here)
-            headers: {'Content-type': 'application/json'},
-            body: jsonEncode({'question': message}),
-          )
-          .timeout(const Duration(seconds: 30));
+      // Api call with 10-second timeout
+      final response = await http.post(
+        Uri.parse(
+          // 'http://10.91.38.56:5000/askques',
+          
+          'http://192.168.63.95:5000/askques',
+
+        ), // your laptop's IP address with port (5000 here)
+        headers: {'Content-type': 'application/json'},
+        body: jsonEncode({'question': message}),
+      );
+      // .timeout(const Duration(seconds: 10));
 
       // Handle successful response
       if (response.statusCode == 200) {
@@ -382,7 +384,7 @@ class ChatInput extends StatelessWidget {
                 !isLoading ? onSend() : null;
                 focusNode.requestFocus();
                 scrollToBottom();
-                
+
                 // Only handle focus/scroll after the message is processed
                 /* WidgetsBinding.instance.addPostFrameCallback((_) {
                   // Check if scroll is needed (content exceeds viewport)
@@ -484,14 +486,11 @@ class ChatDrawer extends StatelessWidget {
           // LOGOUT BUTTON
           ListTile(
             leading: const Icon(Icons.logout, color: Colors.red),
-            title: const Text(
-              'Logout',
-              style: TextStyle(color: Colors.red),
-            ),
+            title: const Text('Logout', style: TextStyle(color: Colors.red)),
             onTap: () {
               // Clear login info
               loggedInEmail = null;
-              loggedInName  = null;
+              loggedInName = null;
 
               // Navigate to login screen
               // Navigator.pushReplacementNamed(context, '/login');
